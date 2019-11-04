@@ -6,3 +6,4 @@ datacenter/migrations/__pycache__
 project/__pycache__
 .env
 __pycache__
+schoolbase.sqlite3
