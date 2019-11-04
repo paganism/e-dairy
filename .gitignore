@@ -1,0 +1,8 @@
+.vscode
+venv
+.git
+datacenter/__pycache__
+datacenter/migrations/__pycache__
+project/__pycache__
+.env
+__pycache__
