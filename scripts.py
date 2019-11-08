@@ -45,7 +45,7 @@ def create_commendation(schoolkid, subj):
         return
     lessons = Lesson.objects.filter(year_of_study=schoolkid_detail.year_of_study,
                                     group_letter=schoolkid_detail.group_letter,
-                                    subject__title=subj).order_by('date') 
+                                    subject__title=subj).order_by('-date') 
     teacher = lessons[0].teacher
     date_commend = lessons[0].date
     comm = Commendation(text=random.choice(commend_list), created=date_commend, schoolkid=schoolkid_detail, subject=subject, teacher=teacher)
